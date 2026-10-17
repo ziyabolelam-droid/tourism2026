@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lesotho tourism website - destinations, accommodation, gallery and booking.">
+  <title>Destinations | MalotiTrails Lesotho</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MalotiTrails logo" class="brand-logo">Maloti<span>Trails</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="btn btn-sm mt-2 mt-lg-0" id="darkBtn" type="button">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Tourist Destinations</h1>
+      <p>Find places to visit in Lesotho</p>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Search and Filter</h2>
+
+      <label for="searchBox" class="visually-hidden">Search destinations</label>
+      <input type="search" id="searchBox" class="form-control search-box" placeholder="Search for a place...">
+
+      <div class="filter-area">
+        <button type="button" class="btn btn-dark" data-cat="all">All</button>
+        <button type="button" class="btn btn-outline-dark" data-cat="water">Water</button>
+        <button type="button" class="btn btn-outline-dark" data-cat="mountain">Mountain</button>
+        <button type="button" class="btn btn-outline-dark" data-cat="culture">Culture</button>
+      </div>
+
+      <!-- the cards are added here by JavaScript -->
+      <div class="row g-4" id="destGrid"></div>
+
+      <div class="alert alert-warning d-none mt-3" id="noResult" role="alert">
+        No destinations found. Try a different word.
+      </div>
+
+      <aside class="tip-box">
+        <h3 class="h5">Travel Tip</h3>
+        <p>Some mountain roads are steep and the weather can change fast. Check the road and weather before you travel.</p>
+      </aside>
+    </section>
+
+    <section class="light-bg">
+      <div class="container">
+        <h2 class="section-title">Distance from Maseru</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <caption>Approximate travel time by road</caption>
+            <thead>
+              <tr>
+                <th>Destination</th>
+                <th>Region</th>
+                <th>Travel time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Thaba Bosiu</td><td>Near Maseru</td><td>30 minutes</td></tr>
+              <tr><td>Maletsunyane Falls</td><td>Semonkong</td><td>2 hours</td></tr>
+              <tr><td>Katse Dam</td><td>Central highlands</td><td>4 hours</td></tr>
+              <tr><td>Sani Pass</td><td>Eastern highlands</td><td>6 hours</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center"><a href="contact.html" class="btn btn-gold">Plan Your Trip</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p>&copy; 2026 MalotiTrails Lesotho</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

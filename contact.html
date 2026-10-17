@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lesotho tourism website - destinations, accommodation, gallery and booking.">
+  <title>Contact | MalotiTrails Lesotho</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MalotiTrails logo" class="brand-logo">Maloti<span>Trails</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="btn btn-sm mt-2 mt-lg-0" id="darkBtn" type="button">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Contact and Booking</h1>
+      <p>Plan your trip to Lesotho</p>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <!-- booking form -->
+        <div class="col-12 col-lg-7">
+          <div class="alert alert-success d-none" id="welcomeMsg"></div>
+
+          <div class="form-box">
+            <h2 class="h4">Booking Form</h2>
+            <form id="bookingForm" novalidate>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required minlength="2">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+266 5800 0000" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="destination" class="form-label">Destination *</label>
+                <select class="form-select" id="destination" name="destination" required>
+                  <option value="">-- Choose --</option>
+                  <option>Maletsunyane Falls</option>
+                  <option>Katse Dam</option>
+                  <option>Sani Pass</option>
+                  <option>Thaba Bosiu</option>
+                </select>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="date" class="form-label">Date *</label>
+                  <input type="date" class="form-control" id="date" name="date" required>
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="people" class="form-label">Number of People *</label>
+                  <input type="number" class="form-control" id="people" name="people" min="1" max="30" value="2" required>
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="tripType" class="form-label">Trip Type</label>
+                <select class="form-select" id="tripType" name="tripType">
+                  <option value="350">Day trip - M350 per person</option>
+                  <option value="700">Adventure day - M700 per person</option>
+                  <option value="1200">Overnight trip - M1200 per person</option>
+                </select>
+              </div>
+              <p class="total-box">Estimated Total: <span id="totalCost">M0</span></p>
+              <button type="submit" class="btn btn-gold w-100">Submit Booking</button>
+              <div class="alert alert-success d-none mt-3" id="bookingSuccess" role="alert"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- contact form and info -->
+        <div class="col-12 col-lg-5">
+          <div class="form-box">
+            <h2 class="h4">Send us a Message</h2>
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="cName" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="cName" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="cEmail" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="cEmail" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="cSubject" class="form-label">Subject *</label>
+                <input type="text" class="form-control" id="cSubject" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="cMessage" class="form-label">Message *</label>
+                <textarea class="form-control" id="cMessage" rows="4" required></textarea>
+                <div class="invalid-feedback"></div>
+              </div>
+              <button type="submit" class="btn btn-gold w-100">Send Message</button>
+              <div class="alert alert-success d-none mt-3" id="contactSuccess" role="alert"></div>
+            </form>
+          </div>
+
+          <aside class="tip-box mt-0">
+            <h3 class="h5">Our Office</h3>
+            <p>Maseru, Lesotho<br>Email: info@malotitrails.example<br>Phone: +266 2200 0000</p>
+            <p class="mb-0"><small>This is a student project. The forms do not send real messages.</small></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p>&copy; 2026 MalotiTrails Lesotho</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

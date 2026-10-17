@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lesotho tourism website - destinations, accommodation, gallery and booking.">
+  <title>Accommodation | MalotiTrails Lesotho</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MalotiTrails logo" class="brand-logo">Maloti<span>Trails</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="accommodation.html">Accommodation</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="btn btn-sm mt-2 mt-lg-0" id="darkBtn" type="button">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Accommodation</h1>
+      <p>Choose where you want to stay</p>
+    </section>
+
+    <section class="container">
+      <div class="alert alert-info" role="alert">
+        These are example places to stay only. Please contact the owner to check the price and if there is space.
+      </div>
+
+      <h2 class="section-title">Places to Stay</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card">
+            <img src="lodge.jpg" class="card-img-top" alt="Mountain lodge surrounded by nature">
+            <div class="card-body">
+              <h3 class="card-title h5">Mountain Lodge <span class="badge bg-warning text-dark">Comfort</span></h3>
+              <p class="card-text">A comfortable place to rest after a long day outside.</p>
+              <ul>
+                <li>Warm rooms</li>
+                <li>Good for couples</li>
+                <li>Nice views</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold">Book Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card">
+            <img src="cabin1.jpg" class="card-img-top" alt="Small cabin in a quiet place">
+            <div class="card-body">
+              <h3 class="card-title h5">Cabin <span class="badge bg-success">Quiet</span></h3>
+              <p class="card-text">A simple cabin for a short break with fresh air.</p>
+              <ul>
+                <li>Very quiet</li>
+                <li>Good for a weekend</li>
+                <li>Bring warm clothes</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold">Book Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card">
+            <img src="guest.jpg" class="card-img-top" alt="Guest house with a garden">
+            <div class="card-body">
+              <h3 class="card-title h5">Guest House <span class="badge bg-primary">Groups</span></h3>
+              <p class="card-text">A big house for families and friends who travel together.</p>
+              <ul>
+                <li>Many rooms</li>
+                <li>Good for groups</li>
+                <li>Meals can be arranged</li>
+              </ul>
+              <a href="contact.html" class="btn btn-gold">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-bg">
+      <div class="container">
+        <h2 class="section-title">Sample Prices</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <caption>Sample prices per night (not real prices)</caption>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>People</th>
+                <th>Price per night</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mountain Lodge</td><td>2</td><td>M900</td></tr>
+              <tr><td>Cabin</td><td>2</td><td>M600</td></tr>
+              <tr><td>Guest House</td><td>6</td><td>M1,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p>&copy; 2026 MalotiTrails Lesotho</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

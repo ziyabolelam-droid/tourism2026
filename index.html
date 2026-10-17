@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lesotho tourism website - destinations, accommodation, gallery and booking.">
+  <title>Home | MalotiTrails Lesotho</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MalotiTrails logo" class="brand-logo">Maloti<span>Trails</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="btn btn-sm mt-2 mt-lg-0" id="darkBtn" type="button">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- carousel -->
+    <section class="p-0">
+      <div id="homeSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="mokhotlong.jpg" class="d-block w-100" alt="Mountains near Mokhotlong in Lesotho">
+            <div class="carousel-caption">
+              <h2>Welcome to Lesotho</h2>
+              <p>The Kingdom in the Sky</p>
+              <a href="destinations.html" class="btn btn-gold">See Destinations</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="background.jpg" class="d-block w-100" alt="Green hills and valley in Lesotho">
+            <div class="carousel-caption">
+              <h2>Beautiful Nature</h2>
+              <p>Mountains, rivers and waterfalls</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="hero.jpg" class="d-block w-100" alt="Landscape view in Lesotho">
+            <div class="carousel-caption">
+              <h2>Warm Basotho Culture</h2>
+              <p>Meet friendly people and learn our history</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- about lesotho -->
+    <section class="container">
+      <h2 class="section-title">About Lesotho</h2>
+      <div class="row">
+        <article class="col-12 col-md-8">
+          <p>Lesotho is a small country that is completely surrounded by South Africa. It is called the Kingdom in the Sky because the whole country is more than 1,000 metres above sea level.</p>
+          <p>The highest point is Thabana Ntlenyana at 3,482 metres. Visitors come to Lesotho to hike, ride ponies, see waterfalls and enjoy the Basotho culture.</p>
+          <p>This website will help you plan your trip.</p>
+        </article>
+        <aside class="col-12 col-md-4">
+          <div class="tip-box mt-0">
+            <h3 class="h5">Quick Facts</h3>
+            <ul>
+              <li>Capital city: Maseru</li>
+              <li>Languages: Sesotho and English</li>
+              <li>Currency: Loti (M)</li>
+              <li>Highest point: 3,482 m</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3 cards -->
+    <section class="light-bg">
+      <div class="container">
+        <h2 class="section-title">What You Can Do</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card">
+              <img src="outdoor.jpg" class="card-img-top" alt="High mountains in Lesotho">
+              <div class="card-body">
+                <h3 class="card-title h5">Explore the Mountains</h3>
+                <p class="card-text">Hike the trails and enjoy the open sky and big views.</p>
+                <a href="destinations.html" class="btn btn-gold">Destinations</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card">
+              <img src="peace.jpg" class="card-img-top" alt="Lake with green hills">
+              <div class="card-body">
+                <h3 class="card-title h5">Relax in Nature</h3>
+                <p class="card-text">Take photos and see the lakes, dams and quiet countryside.</p>
+                <a href="gallery.html" class="btn btn-gold">Gallery</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card">
+              <img src="avani.jpg" class="card-img-top" alt="Lodge in Lesotho">
+              <div class="card-body">
+                <h3 class="card-title h5">Find a Place to Stay</h3>
+                <p class="card-text">Choose from lodges, cabins and guest houses.</p>
+                <a href="accommodation.html" class="btn btn-gold">Accommodation</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- activities -->
+    <section class="container">
+      <h2 class="section-title">Popular Activities</h2>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="activity-list">
+            <li>Pony trekking in the mountains <span class="badge bg-success">Popular</span></li>
+            <li>Hiking to waterfalls</li>
+            <li>Visiting Thaba Bosiu</li>
+            <li>Skiing at Afriski in winter <span class="badge bg-info text-dark">Winter</span></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="activity-list">
+            <li>Birdwatching</li>
+            <li>Buying Basotho hats and blankets</li>
+            <li>Driving up Sani Pass</li>
+            <li>Camping under the stars</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- accordion -->
+    <section class="light-bg">
+      <div class="container">
+        <h2 class="section-title">Travel Tips</h2>
+        <div class="accordion" id="tipsAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tip1">What should I pack?</button>
+            </h3>
+            <div id="tip1" class="accordion-collapse collapse show" data-bs-parent="#tipsAccordion">
+              <div class="accordion-body">Pack warm clothes, a jacket, walking shoes and sunscreen. The weather in the mountains can change very quickly.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip2">When is the best time to visit?</button>
+            </h3>
+            <div id="tip2" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+              <div class="accordion-body">Summer (October to March) is warm and green. Winter (June to August) is cold and it can snow in the mountains.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip3">How do I book a trip?</button>
+            </h3>
+            <div id="tip3" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+              <div class="accordion-body">Go to the <a href="contact.html">Contact page</a> and fill in the booking form. Note: this is a student project so no real bookings are made.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p>&copy; 2026 MalotiTrails Lesotho </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
